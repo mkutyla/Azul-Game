@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: FED371;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.Controllers.DisconnectionController">
+   <children>
+      <Button fx:id="ok" layoutX="124.0" layoutY="111.0" mnemonicParsing="false" onAction="#okOnAction" prefHeight="25.0" prefWidth="260.0" text="OK" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="whoLeft" alignment="CENTER" layoutX="136.0" layoutY="14.0" text="xyz" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="title" alignment="CENTER" layoutX="33.0" layoutY="66.0" prefHeight="26.0" prefWidth="154.0" text="disconnected" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="title1" alignment="CENTER" layoutX="18.0" layoutY="55.0" prefHeight="26.0" prefWidth="232.0" text="Press OK to go to your profile" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

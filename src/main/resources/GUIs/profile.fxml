@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FED371;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.Controllers.ProfileController">
+    <top>
+        <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: FEB834;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="status" prefHeight="50.0" text="Logged in as user" AnchorPane.leftAnchor="25.0">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <Button fx:id="remove" mnemonicParsing="false" onAction="#removeOnAction" prefHeight="40.0" prefWidth="102.0" style="-fx-background-color: FF0000;" text="Remove" textFill="WHITE" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </top>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: FED371;" BorderPane.alignment="CENTER">
+            <children>
+            <Label fx:id="unfinishedLabel" alignment="CENTER" prefHeight="30.0" text="Unifinished games (N):" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutY="4.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: FED371;" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <content>
+                        <VBox fx:id="unfinishedGames" prefHeight="320.0" prefWidth="250.0" style="-fx-background-color: FED371;" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </right>
+   <left>
+      <AnchorPane prefHeight="350.0" prefWidth="332.0" style="-fx-background-color: FED371;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="host" layoutX="50.0" layoutY="140.0" mnemonicParsing="false" onAction="#hostOnAction" prefHeight="50.0" prefWidth="200.0" text="HOST" AnchorPane.bottomAnchor="174.20000000000002" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="resume" layoutX="50.0" layoutY="212.0" mnemonicParsing="false" onAction="#resumeOnAction" prefHeight="50.0" prefWidth="200.0" text="RESUME UNFINISHED" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="error" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Error box" textFill="RED" visible="false" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="100.0" layoutY="-25.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <Button fx:id="join" mnemonicParsing="false" onAction="#joinOnAction" prefHeight="50.0" prefWidth="86.0" text="JOIN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="code" layoutX="141.0" layoutY="12.0" prefHeight="25.0" prefWidth="139.0" promptText="game code" />
+                  <Label fx:id="status11" alignment="CENTER" layoutX="91.0" layoutY="10.0" prefHeight="30.0" prefWidth="50.0" text="code:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

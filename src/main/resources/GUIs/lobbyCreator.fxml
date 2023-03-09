@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FED371;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.Controllers.LobbyCreatorController">
+    <top>
+        <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: FEB834;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="title" prefHeight="50.0" prefWidth="531.0" text="User's lobby: 12345" AnchorPane.leftAnchor="25.0">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: FED371;" BorderPane.alignment="CENTER">
+            <children>
+            <Label fx:id="playersLabel" alignment="CENTER" prefHeight="30.0" text="Players (0):" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutY="4.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: FED371;" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <content>
+                        <VBox fx:id="playersJoined" prefHeight="320.0" prefWidth="250.0" style="-fx-background-color: FED371;" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </right>
+   <left>
+      <AnchorPane prefHeight="350.0" prefWidth="332.0" style="-fx-background-color: FED371;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="start" layoutX="25.0" layoutY="86.0" mnemonicParsing="false" onAction="#startOnAction" prefHeight="50.0" prefWidth="200.0" text="START" AnchorPane.bottomAnchor="213.20000000000002" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="86.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="error" alignment="CENTER" layoutX="25.0" prefHeight="159.0" prefWidth="257.0" text="Error box" textFill="RED" visible="false" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.Controllers.AzulController">
+    <left>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <children>
+                <ImageView fitHeight="422.0" fitWidth="350.0" layoutX="-49.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="-90.6">
+                    <image>
+                        <Image url="@login.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #EDD1F4;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="play" layoutX="20.0" layoutY="225.0" mnemonicParsing="false" onAction="#playOnAction" prefHeight="66.0" prefWidth="292.0" style="-fx-background-color: #DCB3E7;" text="PLAY" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <ImageView fx:id="gif" fitHeight="166.0" fitWidth="185.0" layoutX="83.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="83.74107360839844" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@azul.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
