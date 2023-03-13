@@ -1,7 +1,7 @@
 # Azul
 
 ## Description
-This project's main goal was to create a fully functional implementation of a board game "[Azul](https://www.youtube.com/watch?v=7ygt6qM5WdY)".
+This project's main goal was to create a fully functional implementation of a board game "[Azul]([https://www.youtube.com/watch?v=7ygt6qM5WdY](https://boardgamegeek.com/boardgame/230802/azul))".
 Made as an university project.
 
 Made for 2-4 players, playable both locally and over LAN.\
