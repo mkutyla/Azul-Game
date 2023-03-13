@@ -9,9 +9,12 @@ Games are started via specific request sent from user(s) to the server running o
 Players can register/login to their account and start the game. After connecting to the server a lobby can be created. Other users can join it by entering a unique 5-digit code generated for the lobby, seen by the game's creator.\
 A game can be saved and resumed later by the user that created it. 
 
+Although full game-logic has already been implemented and the whole project is functional, it *might* be updated in the future - we'll most likely focus on GUI.
+
 ## Technologies
 Written in Java, with network features using java.net API\
-GUI made in JavaFX
+GUI made in JavaFX\
+Javadoc
 
 ## Screenshots
 Main menu
