@@ -1,4 +1,4 @@
-# Azul-Game
+# Azul
 
 ## Description
 This project's main goal was to create a fully functional implementation of a board game "[Azul](https://www.youtube.com/watch?v=7ygt6qM5WdY)".
